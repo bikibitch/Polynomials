@@ -35,15 +35,7 @@ public class Grid {
             array[i] = new double[n];
     }
 
-    public void print() {
-        for (int i = 0; i < array[0].length; i++) {
-            System.out.printf("%15.6E", array[0][i]);
-            System.out.printf("%15.6E", array[1][i]);
-            System.out.println();
-        }
-    }
-
     double func(double x) {
-        return Math.sin(x * x) ;
+        return (5 * Math.pow(x,4) - 3 * Math.pow(x,2) + 6);
     }
 }
